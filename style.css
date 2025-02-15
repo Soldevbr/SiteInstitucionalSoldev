@@ -26,6 +26,40 @@ body {
     z-index: 1000;
 }
 
+.menu-topo {
+    display: flex;
+    width: 30%;
+    justify-content: center;
+    gap: 10px;
+}
+
+.menu-topo a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: black;
+}
+.menu-topo a:hover {
+    color: #e8ab10;
+    font-weight: 700;
+}
+
+/* Botão Contato */
+.botao-contato {
+    background-color: #e8ab10;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    color: #fff;
+    cursor: pointer;
+}
+.botao-contato:hover {
+    background-color: #000;
+    color: #fff;
+    flex-direction: column;
+    align-items: center;
+}
+
 /* Espaçamento melhorado */
 .div-principal {
     display: flex;
@@ -44,7 +78,7 @@ body {
 
 .hero-section h1 {
     font-size: 2.5rem;
-    background-image: linear-gradient(45deg, #e8ab10, #ffffff);
+    background-image: linear-gradient(45deg, #e8ab10, #eae7cd);
     -webkit-background-clip: text;
     color: transparent;
     margin-bottom: 10px;
