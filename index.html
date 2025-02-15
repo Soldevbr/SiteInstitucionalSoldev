@@ -2,67 +2,75 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/2ec87f2ee1.js" crossorigin="anonymous"></script>
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/android-chrome-512x512.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-    <title>Soldev</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/2ec87f2ee1.js" crossorigin="anonymous"></script>
+  <title>Soldev</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <div class="div-principal">
-        <!-- Cabeçalho Fixo -->
-        <div class="div-topo">
-            <div class="logo">
-                <img src="img/logo.png" alt="Logo da Soldev" width="190" height="180">
-            </div>
-            <nav class="menu-topo">
-                <a href="#">Serviços</a>
-                <a href="#">Projetos</a>
-                <a href="#">Contato</a>
-                <a href="#">Sobre nós</a>
-                <a href="#">Início</a>
-            </nav>
-
-            <button class="botao-contato">Contato</button>
-        </div>
-
-        <!-- Hero Section -->
-        <section class="hero-section">
-            <h1>Acelere o Crescimento e a Eficiência do Seu Negócio com Software Personalizado e Soluções Inteligentes
-            </h1>
-            <p>Transforme sua empresa com nossas soluções sob medida</p>
-        </section>
-
-        <!-- Modelos de Orçamento -->
-        <section class="modelos-orcamento">
-            <div class="orcamento">
-                <h3>Suporte em Serviços - TI</h3>
-                <p>Entre em contato para obter um orçamento personalizado para serviços de TI.</p>
-                <a href="#">Solicitar Orçamento</a>
-            </div>
-            <div class="orcamento">
-                <h3>Proposta de Sistema - Software</h3>
-                <p>Solicite um orçamento para desenvolvimento de software sob medida.</p>
-                <a href="#">Solicitar Orçamento</a>
-            </div>
-        </section>
+<body onload="scrollDown()">
+  <div class="div-principal">
+    <!-- Cabeçalho Fixo -->
+    <div class="div-topo">
+      <div class="logo">
+        <img src="img/logo.png" alt="Logo da Soldev" width="190" height="180">
+      </div>
+      <nav class="menu-topo">
+        <a href="#">Serviços</a>
+        <a href="#">Projetos</a>
+        <a href="#">Contato</a>
+        <a href="#">Sobre nós</a>
+        <a href="#">Início</a>
+      </nav>
+      <button class="botao-contato">Contato</button>
     </div>
-
-    <!-- Rodapé -->
-    <footer class="rodape">
-        <p>&copy; 2025 Soldev SP. Todos os direitos reservados.</p>
-        <div class="redes-sociais">
-            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-whatsapp"></i><a>
+    
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <h1>Transforme seu negócio com soluções inovadoras</h1>
+      <p>Simplifique processos e alcance novos patamares</p>
+    </section>
+    
+    <!-- Seção de Parcerias -->
+    <section class="parcerias">
+      <h2>Nossos Parceiros</h2>
+      <div class="carrossel">
+        <div class="slide">
+          <img src="img/parceiro1.png" alt="Parceiro 1">
+          <img src="img/parceiro2.png" alt="Parceiro 2">
+          <img src="img/parceiro3.png" alt="Parceiro 3">
+          <img src="img/parceiro4.png" alt="Parceiro 4">
         </div>
-    </footer>
+      </div>
+    </section>
+    
+    <!-- Modelos de Orçamento -->
+    <section class="modelos-orcamento">
+      <div class="orcamento">
+        <h3>Suporte em Serviços - TI</h3>
+        <p>Entre em contato para obter um orçamento personalizado.</p>
+        <a href="#">Solicitar Orçamento</a>
+      </div>
+      <div class="orcamento">
+        <h3>Proposta de Sistema - Software</h3>
+        <p>Solicite um orçamento para desenvolvimento de software.</p>
+        <a href="#">Solicitar Orçamento</a>
+      </div>
+    </section>
+  </div>
+  
+  <!-- Rodapé -->
+  <footer class="rodape">
+    <p>&copy; 2025 Soldev SP. Todos os direitos reservados.</p>
+    <div class="redes-sociais">
+      <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+  </footer>
+  
+  <script src="script.js"></script>
 </body>
 
 </html>
