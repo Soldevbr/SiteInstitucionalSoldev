@@ -7,90 +7,47 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: black;
+    background-color: #f9f9f9;
     min-height: 100vh;
-    margin: 0;
-}
-
-.div-principal {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow-y: auto;
-    scroll-behavior: smooth;
-    height: 85vh;
-}
-
-::-webkit-scrollbar {
-    width: 0px;
 }
 
 /* Cabeçalho */
 .div-topo {
-    width: 100%;    
+    width: 100%;
     height: 10vh;
-    padding-right: 3%;
+    padding: 1% 3%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: fixed;
     top: 0;
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     z-index: 1000;
 }
 
-.logo {
-    position: relative;
-}
-
-.menu-topo {
-    width: 30%;
+/* Espaçamento melhorado */
+.div-principal {
     display: flex;
-    justify-content: space-between;
-}
-
-.menu-topo a {
-    text-decoration: none;
-    font-size: 1rem;
-    color: black;
-}
-
-.menu-topo a:hover {
-    color: #e8ab10;
-    font-weight: 700;
-}
-
-/* Botão Contato */
-.botao-contato {
-    background-color: #e8ab10;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 20px;
-    font-size: 1rem;
-    color: #fff;
-    cursor: pointer;
-}
-
-.botao-contato:hover {
-    background-color: #000;
-    color: #fff;
+    flex-direction: column;
+    align-items: center;
+    scroll-behavior: smooth;
+    padding-top: 12vh;
 }
 
 /* Hero Section */
 .hero-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     text-align: center;
-    flex-direction: column;
-    margin-top: 20vh;
+    padding: 100px 20px;
     width: 80%;
 }
 
 .hero-section h1 {
-    font-size: 2.9rem;
+    font-size: 2.5rem;
     background-image: linear-gradient(45deg, #e8ab10, #ffffff);
     -webkit-background-clip: text;
     color: transparent;
+    margin-bottom: 10px;
 }
 
 .hero-section p {
@@ -98,48 +55,97 @@ body {
     font-weight: 600;
 }
 
+/* Parcerias */
+.parcerias {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #fff;
+    width: 100%;
+}
+
+.parcerias h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.carrossel {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.slide {
+    display: flex;
+    gap: 40px;
+    animation: slide-animation 8s linear infinite;
+}
+
+.slide img {
+    width: 120px;
+    opacity: 0.8;
+    transition: transform 0.5s;
+}
+
+.slide img:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+/* Animação */
+@keyframes slide-animation {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
 /* Modelos de Orçamento */
 .modelos-orcamento {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    padding: 40px;
-    position: relative;
-    top: 5vh;
-    margin-bottom: 10vh;
+    gap: 40px;
+    padding: 100px 20px;
+    width: 100%;
 }
 
 .orcamento {
-    width: 400px;
-    padding: 20px;
+    width: 350px;
+    padding: 30px;
     text-align: center;
     background: linear-gradient(45deg, #e8ab10, #ffffff);
-    border-radius: 10px;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.orcamento:hover {
+    transform: translateY(-5px);
 }
 
 .orcamento h3 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     margin-bottom: 10px;
 }
 
 .orcamento p {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
 }
 
 .orcamento a {
     display: inline-block;
     background-color: #000;
     color: #fff;
-    padding: 8px 15px;
+    padding: 10px 15px;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
+    transition: background 0.3s;
 }
 
 .orcamento a:hover {
-    background-color: #f1f1f1;
+    background-color: #fff;
     color: #000;
+    border: 1px solid #000;
 }
 
 /* Rodapé */
@@ -149,66 +155,11 @@ body {
     text-align: center;
     padding: 20px;
     width: 100%;
-    position: fixed;
-    bottom: 0;
 }
 
-.redes-sociais {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 10px;
-}
-
+/* Ícones do rodapé */
 .redes-sociais a {
     color: #e8ab10;
     font-size: 1.9rem;
-}
-
-/* Responsividade */
-@media screen and (max-width: 768px) {
-    .div-topo {
-        width: 100%;
-        padding: 1%;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .logo {
-        position: relative;
-        right: 5%;
-        bottom: 0.5vh;
-    }
-
-    .menu-topo {
-        display: none;
-    }
-
-    .botao-contato {
-        width: 100px;
-        font-size: 1rem;
-        padding: 2%;
-        position: relative;
-        right: 4%;
-    }
-
-    .hero-section h1 {
-        font-size: 1.4rem;
-    }
-
-    .modelos-orcamento {
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 3vh;
-    }
-
-    .orcamento {
-        width: 100%;
-    }
-
-    .rodape { 
-        height: 100px;
-        margin-top: 5vh;
-        font-size: 0.8rem;
-    }
+    margin: 0 10px;
 }
